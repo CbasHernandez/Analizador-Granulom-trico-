@@ -34,3 +34,5 @@ El **Analizador Granulométrico de Suelos** automatiza el cálculo de laboratori
    ```bash
    git clone [https://github.com/CbasHernandez/Analizador-Granulom-trico-.git](https://github.com/CbasHernandez/Analizador-Granulom-trico-.git)
    cd Analizador-Granulom-trico-# Analizador-Granulom-trico-
+
+![Ejemplo del Analizador](nombre_de_tu_imagen.png)
