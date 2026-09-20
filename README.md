@@ -25,6 +25,7 @@ El **Analizador Granulométrico de Suelos** automatiza el cálculo de laboratori
   * `matplotlib` (renderizado de la curva granulométrica)
   * `openpyxl` (creación y formato de libros Excel)
   * `reportlab` (generación de informes en PDF)
+  * 	tkinter para la interfaz gráfica: viene incluido con Python en Windows y macOS, pero en muchas distribuciones de Linux debe instalarse aparte (ver paso 3 de la instalación).
 
 ---
 
@@ -32,8 +33,24 @@ El **Analizador Granulométrico de Suelos** automatiza el cálculo de laboratori
 
 1. Clona el repositorio en tu equipo local:
    ```bash
-   git clone [https://github.com/CbasHernandez/Analizador-Granulom-trico-.git](https://github.com/CbasHernandez/Analizador-Granulom-trico-.git)
-   cd Analizador-Granulom-trico-# Analizador-Granulom-trico-
+   git clone https://github.com/CbasHernandez/Analizador-Granulom-trico-.git
+cd Analizador-Granulom-trico-
+
+2. Instala las dependencias de Python
+pip install numpy matplotlib openpyxl reportlab
+
+3. Solo en Linux, instala Tkinter si tu distribución no lo trae por defecto:
+sudo apt install python3-tk
+
+4. Ejecuta el programa
+python main.py
+
+
+🖥️ Uso
+	1.	Al abrir, la ventana carga una muestra de ejemplo (tamices, aberturas y pesos retenidos) para probar el flujo rápidamente.
+	2.	Edita los datos de la muestra y de los tamices según tu ensayo, o pulsa LIMPIAR para empezar desde cero.
+	3.	Pulsa CALCULAR para obtener la clasificación SUCS, los porcentajes de grava/arena/finos, los parámetros D10/D30/D60/Cu/Cc y la curva granulométrica.
+	4.	Usa Exportar a PDF o Exportar a Excel para guardar el informe técnico completo.
 
 <img width="1094" height="701" alt="Ejemplo" src="https://github.com/user-attachments/assets/daea4a3a-c4df-476f-997c-a6bb8e8cacd8" />
 
